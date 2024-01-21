@@ -1,7 +1,5 @@
-## TAV 2024 Duoc UC - Gestion agil  de proyecto
+## Duoc UC TAV 2024 - Gestion agil de proyecto
 
 ### Proyecto criters
 
-
-
-SYSTEM Base: Django +  
+ 
