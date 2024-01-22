@@ -4,4 +4,4 @@
 
 
 
-SYSTEM Base: Django +  
+SYSTEM Base: Django Rest Framework  
