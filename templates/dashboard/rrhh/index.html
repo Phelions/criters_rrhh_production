@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RRHHH</title>
-</head>
-<body>
-    <h1>RRHHH</h1>
-</body>
+    <head>
+        {% load static %}
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>RRHH - Dashboard</title>
+        <!-- Favicon-->
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="{% static 'css/dashboard/rrhh_style.css' %}"> 
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">RRHH Dashboard</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="http://127.0.0.1:8000/rrhh/">Ingreso Personal</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Liquidaciones</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="#!">Terminar Sesión</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content
+                <div class="container-fluid">
+                    <section class="layout">
+                    <div class="grow1">
+                        <button ></button>
+                    </div>
+                    <div class="grow1">2</div>
+                    <div class="grow1">3</div>
+                    </section>
+                </div>
+                -->
+                
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <p>Rut</p>
+                        <input type="text" name="Rut" id="Rut" class="form-control" placeholder="Rut">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <p>Nombre</p>
+                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <p>Apellido</p>
+                        <input type="text" name="Apellido" id="Apellido" class="form-control" placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                     <div class="p-2 bd-highlight">
+                        <p>Fecha Nacimiento</p>
+                        <input id="datetime" type="date" name="book_date" id="book_date">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <p>Area Desempeño</p>
+                        <input type="text" name="Area" id="Area" class="form-control" placeholder="Area">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <p>Sueldo</p>
+                        <input type="text" name="Sueldo" id="Sueldo" class="form-control" placeholder="Sueldo">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <p>Direccion</p>
+                        <input type="text" name="Direccion" id="Direccion" class="form-control" placeholder="Direccion">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <p>Fecha Contrato</p>
+                        <input id="datetime" type="date" name="Fecha Contrato" id="Fecha Contrato">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <p>Salud</p>
+                        <input type="text" name="Salud" id="Salud" class="form-control" placeholder="Salud">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <p>AFP</p>
+                        <input type="text" name="AFP" id="AFP" class="form-control" placeholder="AFP">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 bd-highlight">
+                        <p>Correo</p>
+                        <input type="text" name="Correo" id="Correo" class="form-control" placeholder="Correo">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 mt-4">
+                        <button class="btn btn-danger w-100 py-2" type="submit">Registrar Usuario</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/rrhh_scripts.js"></script>
+    </body>
 </html>

@@ -29,6 +29,11 @@ class Usuario(models.Model):
 ## Podriamos una tabla login con usuario y contraseña y que se relacione con la tabla usuario, 
 ## para que no se pueda acceder a la tabla usuario sin antes pasar por la tabla login
     
+    
+    
+    
+## produccion , orden de requsicion, orden de producion 
+
 
 class Login(models.Model):
     usuario = models.OneToOneField(Usuario, on_delete=models.CASCADE)
