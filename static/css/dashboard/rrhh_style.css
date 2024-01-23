@@ -3,6 +3,18 @@
 
 
 @charset "UTF-8";
+
+
+        .fecha-container {
+            display: flex;
+            align-items: center;
+        }
+    
+        /* Estilo para el texto "Seleccione fecha" */
+        .selecciona-fecha {
+            margin-right: 10px;
+            /* Espacio entre el texto y el selector */
+        }
 .layout {
     width: 100%;
     align-items: center;

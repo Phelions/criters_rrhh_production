@@ -18,8 +18,9 @@
             <div class="border-end bg-white" id="sidebar-wrapper">
                 <div class="sidebar-heading border-bottom bg-light">RRHH Dashboard</div>
                 <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="http://127.0.0.1:8000/rrhh/">Ingreso Personal</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Liquidaciones</a>
+                    <a class="list-group-item list-group-item-action list-group-item-danger p-3 active " href="{% url  'rrhh' %}">Personal</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3 " href="{% url  'ingreso' %}">Ingreso Personal</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{% url 'liquidaciones'%}">Liquidaciones</a>
                 </div>
             </div>
             <!-- Page content wrapper-->
@@ -35,90 +36,65 @@
                         </div>
                     </div>
                 </nav>
-                <!-- Page content
-                <div class="container-fluid">
-                    <section class="layout">
-                    <div class="grow1">
-                        <button ></button>
-                    </div>
-                    <div class="grow1">2</div>
-                    <div class="grow1">3</div>
-                    </section>
-                </div>
-                -->
-                
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 bd-highlight">
-                        <p>Rut</p>
-                        <input type="text" name="Rut" id="Rut" class="form-control" placeholder="Rut">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 bd-highlight">
-                        <p>Nombre</p>
-                        <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 bd-highlight">
-                        <p>Apellido</p>
-                        <input type="text" name="Apellido" id="Apellido" class="form-control" placeholder="Apellido">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                     <div class="p-2 bd-highlight">
-                        <p>Fecha Nacimiento</p>
-                        <input id="datetime" type="date" name="book_date" id="book_date">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 bd-highlight">
-                        <p>Area Desempeño</p>
-                        <input type="text" name="Area" id="Area" class="form-control" placeholder="Area">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 bd-highlight">
-                        <p>Sueldo</p>
-                        <input type="text" name="Sueldo" id="Sueldo" class="form-control" placeholder="Sueldo">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 bd-highlight">
-                        <p>Direccion</p>
-                        <input type="text" name="Direccion" id="Direccion" class="form-control" placeholder="Direccion">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 bd-highlight">
-                        <p>Fecha Contrato</p>
-                        <input id="datetime" type="date" name="Fecha Contrato" id="Fecha Contrato">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <div class="p-2 bd-highlight">
+                                <p>Rut</p>
+                                <input type="text" name="Rut" id="Rut" class="form-control" placeholder="Rut">
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <p>Nombre</p>
+                                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <p>Apellido</p>
+                                <input type="text" name="Apellido" id="Apellido" class="form-control" placeholder="Apellido">
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <p>Fecha Nacimiento</p>
+                                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="form-control">
+
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <p>Area Desempeño</p>
+                                <input type="text" name="Area" id="Area" class="form-control" placeholder="Area">
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <p>Sueldo</p>
+                                <input type="text" name="Sueldo" id="Sueldo" class="form-control" placeholder="Sueldo">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="p-2 bd-highlight">
+                                <p>Direccion</p>
+                                <input type="text" name="Direccion" id="Direccion" class="form-control" placeholder="Direccion">
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <p>Fecha Contrato</p>
+                                <input type="date" name="fecha_contrato" id="fecha_contrato" class="form-control">
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <p>Salud</p>
+                                <input type="text" name="Salud" id="Salud" class="form-control" placeholder="Salud">
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <p>AFP</p>
+                                <input type="text" name="AFP" id="AFP" class="form-control" placeholder="AFP">
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <p>Correo</p>
+                                <input type="text" name="Correo" id="Correo" class="form-control" placeholder="Correo">
+                            </div>
+                            <div class="p-2 mt-4">
+                                <button class="btn btn-danger w-100 py-2" type="submit">Registrar Usuario</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 bd-highlight">
-                        <p>Salud</p>
-                        <input type="text" name="Salud" id="Salud" class="form-control" placeholder="Salud">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 bd-highlight">
-                        <p>AFP</p>
-                        <input type="text" name="AFP" id="AFP" class="form-control" placeholder="AFP">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 bd-highlight">
-                        <p>Correo</p>
-                        <input type="text" name="Correo" id="Correo" class="form-control" placeholder="Correo">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 mt-4">
-                        <button class="btn btn-danger w-100 py-2" type="submit">Registrar Usuario</button>
-                    </div>
-                    
-                </div>
+
+
             </div>
         </div>
         <!-- Bootstrap core JS-->

@@ -16,7 +16,6 @@ class Usuario(models.Model):
         ('PRD','PRODUCCION'),
     )
     area_desempenio = models.CharField(max_length=300, choices = AREA)
-    estado = models.BooleanField(default=True)
     telefono = models.CharField(max_length=20)
     direccion = models.CharField(max_length=20)
     fecha_nacimiento = models.DateField()
@@ -33,9 +32,3 @@ class Usuario(models.Model):
     
     
 ## produccion , orden de requsicion, orden de producion 
-
-
-class Login(models.Model):
-    usuario = models.OneToOneField(Usuario, on_delete=models.CASCADE)
-    contrasena = models.CharField(max_length=20)
-    

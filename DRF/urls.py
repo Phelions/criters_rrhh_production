@@ -25,5 +25,7 @@ urlpatterns = [
     path('docs/', include_docs_urls(title='API Documentation')),
     path('', home),
     path('rrhh/', rrhh, name='rrhh'),
+    path('rrhh/ingreso', ingreso_personal, name='ingreso'),
+    path('rrhh/liquidaciones', liquidaciones, name='liquidaciones'),
     path('prd/', prd, name='prd'),
 ]
