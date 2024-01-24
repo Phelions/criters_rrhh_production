@@ -28,4 +28,5 @@ urlpatterns = [
     path('rrhh/ingreso', ingreso_personal, name='ingreso'),
     path('rrhh/liquidaciones', liquidaciones, name='liquidaciones'),
     path('prd/', prd, name='prd'),
+    path('prd/orden_prd', orden_prd, name='orden_prd'),
 ]

@@ -8,7 +8,7 @@ def home(request):
 
 
 def rrhh(request):
-    return render(request, 'dashboard/rrhh/index.html')
+    return render(request, 'dashboard/rrhh/ingreso_personal.html')
 
 def ingreso_personal(request):
     return render(request, 'dashboard/rrhh/ingreso_personal.html')
@@ -20,3 +20,7 @@ def liquidaciones(request):
 
 def prd(request):
     return render(request, 'dashboard/prd/index.html')
+
+
+def orden_prd(request):
+    return render(request, 'dashboard/prd/orden_prd.html')
