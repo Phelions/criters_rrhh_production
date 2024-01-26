@@ -15,4 +15,6 @@ Pasos para iniciar proyecto:
 
 
 
+para iniciar nrok
 
+- .\ngrok.exe http 8000
